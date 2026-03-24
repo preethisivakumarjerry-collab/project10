@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Container Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+<style>
+
+/* Default Light */
+body{
+    font-family:'Segoe UI', sans-serif;
+    background:#f8f9fa;
+    transition:0.3s;
+}
+
+/* Navbar */
+.navbar{
+    background:#ffffff;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* Header */
+.header{
+    text-align:center;
+    padding:40px 0;
+}
+
+/* Section */
+.section{
+    background:white;
+    border-radius:10px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.section:hover{
+    transform: translateY(-3px);
+}
+
+/* Dark Mode */
+.dark-mode{
+    background:#121212;
+    color:white;
+}
+.dark-mode .navbar{
+    background:#1e1e1e;
+}
+.dark-mode .section{
+    background:#1e1e1e;
+    color:white;
+}
+
+/* Button */
+.toggle-btn{
+    border:none;
+    background:black;
+    color:white;
+    padding:6px 15px;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.dark-mode .toggle-btn{
+    background:white;
+    color:black;
+}
+
+</style>
+
+<script>
+function toggleMode(){
+    document.body.classList.toggle("dark-mode");
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <a class="navbar-brand">My Page</a>
+
+    <div class="ml-auto">
+      <button class="toggle-btn" onclick="toggleMode()">🌙 Mode</button>
+    </div>
+  </div>
+</nav>
+
+<!-- Header -->
+<div class="header">
+  <h1> Bootstrap Page</h1>
+</div>
+
+<div class="container">
+
+  <!-- Section 1 -->
+  <div class="section">
+    <h4>Basic Container</h4>
+    <p>This section demonstrates a clean and simple professional layout.</p>
+  </div>
+
+  <!-- Section 2 -->
+  <div class="section">
+    <h4>Dark Theme Section</h4>
+    <p>Use the toggle button to switch between dark and light modes.</p>
+  </div>
+
+  <!-- Section 3 -->
+  <div class="section">
+    <h4>Primary Section</h4>
+    <p>This section highlights important content in a professional UI.</p>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="section">
+    <h4>Contact</h4>
+    <p>Email: preethisivakumarmail@gmail.com</p>
+    <p>Phone: +91 63744 43441</p>
+  </div>
+
+</div>
+
+</body>
+</html>
+
